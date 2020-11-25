@@ -25,9 +25,12 @@ body {
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
+
+
+
 header {
   grid-area: header;
-  background-color: #203040;
+  background-color: #000000;
 }
 main {
   grid-area: main;
@@ -35,7 +38,7 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #203040;
+  background-color: #000000;
   color: #ffffff;
 }
 /* Common */
@@ -91,15 +94,27 @@ button.primary {
 button.block {
   width: 100%;
 }
+
+
 /* Header */
 header a {
   color: #ffffff;
   padding: 1rem;
 }
+.brand{
+  margin-left: 0%;
+}
 a.brand {
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
+  margin-left: 0%;
+
+}
+.header-search{
+  margin-left: 10rem;
+  width: 60rem;
+  
 }
 .badge{
   background-color: #f02020;

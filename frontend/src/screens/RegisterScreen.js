@@ -29,6 +29,16 @@ export default function RegisterScreen() {
           ></input>
         </div>
         <div>
+          <label htmlFor="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter email"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+          ></input>
+        </div>
+        <div>
           <label htmlFor="password">Password</label>
           <input
             type="password"

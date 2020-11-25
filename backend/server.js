@@ -10,7 +10,7 @@ app.get('/api/products/:id', (req, res) => {
   } else {
     res.status(404).send({ message: 'Product Not Found' });
   }
-});
+}); 
 
 app.get("/api/products", (req, res) => {
   res.send(data.products);
