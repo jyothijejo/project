@@ -1,3 +1,5 @@
+
+
 html {
   font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
   box-sizing: border-box;
@@ -9,10 +11,21 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(234,237,237);
 }
 #root {
   height: 100%;
 }
+/*BANNER....*/
+.home_image{
+  width: 100%;
+  mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+  max-width: 1500px;
+  z-index: -1;
+  margin-bottom: -150px;
+}
+
+
 
 /* Layout */
 .grid-container {
@@ -97,6 +110,14 @@ button.block {
 
 
 /* Header */
+.search-icon{
+  background-color: rgb(255, 255, 255);
+  padding: 2px;
+  height: 20px;
+  
+  
+}
+
 header a {
   color: #ffffff;
   padding: 1rem;
@@ -114,6 +135,7 @@ a.brand {
 .header-search{
   margin-left: 10rem;
   width: 60rem;
+
   
 }
 .badge{
@@ -140,28 +162,48 @@ a.brand {
   flex: 1 1 25rem;
 }
 .col-2 {
-  flex: 2 1 50rem;
+  flex: 1 1 25rem;
 }
 
 .min-30{
   min-width: 30rem;
 }
 
+
+
 /* Image */
+
+.Back-screen{
+
+  padding:10px;
+}
 img {
   border-radius: 0.5rem;
 }
 img.medium {
   max-width: 29rem;
   width: 100%;
+  background-color:white;
 }
 img.large {
-  width: 100%;
+  width: 70%;
+  padding:10px;
+  
 }
 img.small{
   max-width: 5rem;
   width: 100%;
 }
+
+.ad_image{
+  width: 90%;
+  text-align: center;
+  padding-left: 70px;
+  max-width: 1500px;
+  
+}
+
+
 
 /* Card */
 .card {
@@ -169,6 +211,7 @@ img.small{
   background-color: #f8f8f8;
   border-radius: 0.5rem;
   margin: 1rem;
+  z-index: 1;
 }
 .card-body {
   padding: 1rem;

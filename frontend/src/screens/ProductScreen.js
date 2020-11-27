@@ -23,13 +23,14 @@ export default function ProductScreen(props) {
 
   return (
     <div>
+    
     {loading ? (
       <LoadingBox></LoadingBox>
     ) : error ? (
       <MessageBox variant="danger">{error}</MessageBox>
     ) : (
       <div>
-        <Link to="/">Back to result</Link>
+        <Link className='Back-screen' to="/">Back to result</Link>
         <div className="row top">
           <div className="col-2">
             <img

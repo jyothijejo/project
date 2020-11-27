@@ -1,0 +1,76 @@
+.company{
+    background-image:url(../images/company.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    max-width: 1500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+h1{
+    margin: 0;
+}
+.company-text{
+    position: absolute;
+    width:1140px;
+    top:10%;
+    left:60%
+    
+}
+
+.link-button{
+   display: inline-block;
+   margin-right: 20px;
+   padding: 10px 30px;
+   font-weight: 300;
+   background-color: rgb(240, 178, 46);
+   border-radius: 200px;
+   color: #000;
+   
+   
+}
+.link-button:hover{
+    color:#fff;
+}
+
+ 
+ 
+.col{
+    display: block;
+    float: left;
+    margin:1% 0 1% 1.6%;
+}
+
+.col:first-child{
+    margin-left: 0;;
+}
+
+
+.span-4-of-4{
+    width: 100%;
+}
+
+.span-3-of-4{
+    width: 74.6%;
+}
+
+.span-2-of-4{
+    width: 49.2%;
+}
+
+.span-1-of-4{
+    width: 23.8%;
+}
+
+
+section{
+    padding: 50px  80px;
+}
+
+.charges{
+    margin-top: 0%;
+    padding:0px ;
+    text-align: center;
+}

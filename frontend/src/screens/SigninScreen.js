@@ -13,7 +13,7 @@ export default function SigninScreen(){
     // TODO: sign in action
   };
   return (
-    <div>
+    <div className='sign-form'>
       <form className="form" onSubmit={submitHandler}>
         <div>
           <h1>Sign In</h1>
