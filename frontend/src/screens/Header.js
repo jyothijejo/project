@@ -1,6 +1,8 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch,useSelector } from 'react-redux';
 import {Link} from 'react-router-dom';
+
+import { signout } from '../actions/userActions';
 import logo from '../images/logo1.png';
 import './Header.css';
 import SearchIcon from "@material-ui/icons/Search";
@@ -10,6 +12,13 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 function NavBar() {
     const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
+
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
+  const dispatch = useDispatch();
+  const signoutHandler = () => {
+    dispatch(signout());
+  };
 
 
 
@@ -35,12 +44,29 @@ function NavBar() {
             <div className='header_nav'>
 
                 {/* 1st link */}
+
+                {userInfo ? (
+              <div className="dropdown">
+                <Link to="#">
+                  {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                </Link>
+                <ul className="dropdown-content">
+                  <li>
+                    <Link to="#signout" onClick={signoutHandler}>
+                      Sign Out
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            ) : (
                 <Link to='/signin' className='header_link'>
                    <div className='header_option'>
                       <span className='header_optionLineOne'>Hello </span>
                       <span className='header_optionLineTwo'>Sign In</span>
-                   </div> 
+                     
+                   </div>   
                 </Link>
+                 )}
 
                 
 

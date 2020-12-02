@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './Company.css';
 
+
 function CompanyPage() {
     return (
         <div>
@@ -17,7 +18,7 @@ function CompanyPage() {
                 </div>
             <section className='features'>
                 <div className='row'>
-                    <h1> Keep Trust On Us - We Are Here - Stay Home And Chill..</h1>
+                    <h1 className='company-header'> Keep Trust On Us - We Are Here - Stay Home And Chill..</h1>
                     
                     
                 </div>
@@ -63,7 +64,14 @@ function CompanyPage() {
                 </div>
                 <h1 className='charges'>Additional charges need to pay..</h1>
             </section>
+
+            <div> 
+                hello world...
+                </div>
             
+
+
+
         </div>
          
     )
