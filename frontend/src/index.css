@@ -234,6 +234,11 @@ img.small{
 .success {
   color: #20a020;
 }
+
+/* Alert */
+.loading {
+  display: block !important;
+}
 .danger {
   color: #a02020;
 }
