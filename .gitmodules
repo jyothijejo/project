@@ -1,0 +1,3 @@
+[submodule "Capstone/Capstone/project"]
+	path = Capstone/Capstone/project
+	url = https://github.com/kasaabhishek/project.git
