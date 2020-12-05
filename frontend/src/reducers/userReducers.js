@@ -1,4 +1,7 @@
 import {
+    USER_Help_FAIL,
+    USER_Help_REQUEST,
+    USER_Help_SUCCESS,
     USER_REGISTER_FAIL,
     USER_REGISTER_REQUEST,
     USER_REGISTER_SUCCESS,
@@ -7,6 +10,25 @@ import {
     USER_SIGNIN_SUCCESS,
     USER_SIGNOUT,
   } from '../constants/userConstants';
+
+
+  export const userHelpReducer = (state = {}, action) => {
+    switch (action.type) {
+      case USER_Help_REQUEST:
+        return { loading: true };
+      case USER_Help_SUCCESS:
+        return { loading: false, userInfo: action.payload };
+      case USER_Help_FAIL:
+        return { loading: false, error: action.payload };
+      default:
+        return state;
+    }
+  };
+
+
+
+
+
 
   export const userRegisterReducer = (state = {}, action) => {
     switch (action.type) {

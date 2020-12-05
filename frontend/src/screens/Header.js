@@ -99,7 +99,11 @@ function NavBar() {
               )}
                     </div>  
                 </Link>
-            </div>    
+
+
+            </div>  
+            
+              
         </nav>
     )
 }

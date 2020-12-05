@@ -4,8 +4,8 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
 import { listProducts } from '../actions/productActions';
-import Banner from '../images/amazon.jpg';
-import Add from '../images/amazon1.jpg';
+import Banner from '../images/amazon5.jpg';
+//import Add from '../images/amazon1.jpg';
 
 
 import Item1 from '../images/dish.jpg';
@@ -109,6 +109,8 @@ export default function HomeScreen() {
     {/*<div className='ad-container'>
     <img className='ad_image' src={Add} alt='amazon ad'/>
       </div>*/}
+    
+
     
     
     </div>

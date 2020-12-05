@@ -56,7 +56,14 @@ export default function ProductScreen(props) {
                 <p>{product.description}</p>
               </li>
             </ul>
+
+                <Link className='link-button' to='/help'>Give Feedback</Link>
+                <Link className='link-button' to='/'>Profile</Link>
+
           </div>
+
+
+          
           <div className="col-1">
             <div className="card card-body">
               <ul>
