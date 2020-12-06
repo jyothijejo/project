@@ -28,6 +28,7 @@ function NavBar() {
 
             {/* logo on the left*/}
             <Link to='/'>
+              
            <img  className='header_logo' src={logo} alt='' />
            </Link>
 
@@ -71,10 +72,10 @@ function NavBar() {
                 
 
                 {/* 3nd link */}
-                <Link to='/' className='header_link'>
+                <Link to='/posting' className='header_link'>
                    <div className='header_option'>
-                      <span className='header_optionLineOne'>... </span>
-                      <span  className='header_optionLineTwo'>...</span>
+                      <span className='header_optionLineOne'>Add </span>
+                      <span  className='header_optionLineTwo'>Product</span>
                    </div> 
                 </Link>
 

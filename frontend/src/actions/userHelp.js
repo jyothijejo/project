@@ -7,7 +7,7 @@ import {
 } from '../constants/userConstants';
 
 
-export const help = (name, email,usernumber, sellername,phone) => async (dispatch) => {
+export const help = (name, email,usernumber,sellername,phone) => async (dispatch) => {
   dispatch({ type: USER_Help_REQUEST, payload: { name,email,usernumber, sellername,phone } });
   try {
     const { data } = await Axios.post('/api/users/help', { //create backend API
