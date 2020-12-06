@@ -7,6 +7,9 @@ import logo from '../images/logo1.png';
 import './Header.css';
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import HelpIcon from '@material-ui/icons/Help';
+import AddBoxIcon from '@material-ui/icons/AddBox';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 
 function NavBar() {
@@ -49,7 +52,10 @@ function NavBar() {
                 {userInfo ? (
               <div className="dropdown">
                 <Link to="#">
+               
+
                   {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
+                  < AccountCircleIcon />
                 </Link>
                 <ul className="dropdown-content">
                   <li>
@@ -62,8 +68,9 @@ function NavBar() {
             ) : (
                 <Link to='/signin' className='header_link'>
                    <div className='header_option'>
-                      <span className='header_optionLineOne'>Hello </span>
-                      <span className='header_optionLineTwo'>Sign In</span>
+                      
+                      <span className='header_optionLineOne'> Hello</span>
+                      <span className='header_optionLineTwo'> Sign In</span>
                      
                    </div>   
                 </Link>
@@ -74,16 +81,20 @@ function NavBar() {
                 {/* 3nd link */}
                 <Link to='/posting' className='header_link'>
                    <div className='header_option'>
-                      <span className='header_optionLineOne'>Add </span>
-                      <span  className='header_optionLineTwo'>Product</span>
+                      <AddBoxIcon/>
+                      <span  className='header_optionLineTwo'> Add Product</span>
                    </div> 
                 </Link>
 
                 {/* 0nd link */}
+                
                 <Link to='/company' className='header_link'>
+                  
+              
                    <div className='header_option'>
-                      <span className='header_optionLineOne'>Need Help </span>
-                      <span  className='header_optionLineTwo'>From Us</span>
+                   <HelpIcon />
+                     
+                      <span  className='header_optionLineTwo'>Need Help</span>
                    </div> 
                 </Link>
 

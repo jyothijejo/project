@@ -58,7 +58,7 @@ export default function ProductScreen(props) {
             </ul>
 
                 <Link className='link-button' to='/help'>Give Feedback</Link>
-                <Link className='link-button' to='/'>Profile</Link>
+              
 
           </div>
 
@@ -113,16 +113,7 @@ export default function ProductScreen(props) {
                       >
                         Add to Cart
                       </button>
-                      <button
-                        className="primary block"
-                      >
-                        .....
-                      </button>
-                      <button
-                        className="primary block"
-                      >
-                        .....
-                      </button>
+                      
                     </li>
                   </>
                 )}
