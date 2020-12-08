@@ -41,7 +41,10 @@ export default function HomeScreen() {
 
         <img className='home_image' src={Banner} alt='amazon ad'/>
 
-      {loading ? (
+       
+
+
+        {loading ? (
       <LoadingBox></LoadingBox>
     ) : error ? (
       <MessageBox variant="danger">{error}</MessageBox>
@@ -102,13 +105,17 @@ export default function HomeScreen() {
        </ul>
 
     </section>
-
-
+    
+    
 
     
-    {/*<div className='ad-container'>
+
+  
+
+    
+   {/*<div className='ad-container'>
     <img className='ad_image' src={Add} alt='amazon ad'/>
-      </div>*/}
+      </div> */} 
     
 
     

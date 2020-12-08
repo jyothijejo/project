@@ -82,7 +82,7 @@ class SubmitAdd extends React.Component {
         if (this.props.match.path === '/posting') {
 
 
-            axios.post('http://localhost:5000/item/ads', formData).then(res => {
+            axios.post('/api/add/product', formData).then(res => {
                 console.log(res.data);
 
                 this._addNotification("success", "Your ad successfully upload.");
@@ -145,7 +145,8 @@ class SubmitAdd extends React.Component {
         return (
             <div>
                 <div id="container" className="container">
-                
+                 
+                 
                     <div id="subbox">
                         <p>Uploading Product..</p>
                         <div id="submitform">
@@ -197,7 +198,7 @@ uct                                         </select>
                                 <label><b>Post Description</b><span style={{ color: 'red' }}>*</span></label><br/>
                                 <textarea cols={60} rows={8}
 
-                                    className="form-control" name="description" placeholder="Sharing product description" required>
+                                    className="form-control" name="description" placeholder="exchanging product description" required>
                                 </textarea> <br /> <br />
 
                                 <label><b>Upload Photos</b><span style={{ color: 'red' }}>*</span></label>
@@ -206,10 +207,6 @@ uct                                         </select>
 
                                     <input type="file" className="custom-file-input" onChange={this.onchange} name="img1" id="img1" required />
                                     <label htmlFor="img1" className="custom-file-label" >{this.state.img1}</label>
-                                </div>
-                                <div className="custom-file mb-3" >
-                                    <input type="file" className="custom-file-input" onChange={this.onchange} name="img2" id="img2" required />
-                                    <label htmlFor="img2" className="custom-file-label" >{this.state.img2}</label>
                                 </div>
                                 
 

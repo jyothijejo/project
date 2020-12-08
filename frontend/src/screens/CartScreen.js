@@ -97,7 +97,7 @@ export default function CartScreen(props) {
                 className="primary block"
                 disabled={cartItems.length === 0}
               >
-                Proceed to Checkout
+                Item - Item
               </button>
               <button
                 type="button"
@@ -105,7 +105,7 @@ export default function CartScreen(props) {
                 className="primary block"
                 disabled={cartItems.length === 0}
               >
-                .........
+                Item - Item + Cash
               </button>
               <button
                 type="button"
@@ -113,7 +113,7 @@ export default function CartScreen(props) {
                 className="primary block"
                 disabled={cartItems.length === 0}
               >
-                ..........
+                Only Cash
               </button>
             </li>
           </ul>

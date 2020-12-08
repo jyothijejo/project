@@ -5,6 +5,7 @@ import { detailsProduct } from '../actions/productActions';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Rating from '../components/Rating';
+import Add from '../images/amazon7.jpg';
 
 export default function ProductScreen(props) {
   const dispatch = useDispatch();
@@ -21,8 +22,14 @@ export default function ProductScreen(props) {
     props.history.push(`/cart/${productId}?qty=${qty}`);
   };
 
-  return (
-    <div>
+  return ( 
+
+    
+    <div>  
+
+    <div className='ad-container'>
+    <img className='ad_image' src={Add} alt='amazon ad'/>
+      </div> 
     
     {loading ? (
       <LoadingBox></LoadingBox>

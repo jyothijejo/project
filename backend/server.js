@@ -32,9 +32,14 @@ mongoose.connect(db,{useNewUrlParser:true,useUnifiedTopology: true,useCreateInde
 const userRouter = require('./router/userRouter.js');
 const productRouter = require('./router/productRouter.js');
 const orderRouter = require('./router/orderRouter.js');
+const AddRouter = require('./router/AddRouter.js');
+
+
+
 app.use('/api/users',userRouter);
 app.use('/api/products',productRouter);
 app.use('/api/orders',orderRouter);
+app.use('/api',AddRouter);
 
 app.get("/", (req, res) => {
   res.send("server is ready .........");

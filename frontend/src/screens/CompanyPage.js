@@ -66,7 +66,7 @@ function CompanyPage() {
             </section>
 
             <div> 
-                hello world...
+            
                 </div>
             
 

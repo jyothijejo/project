@@ -8,7 +8,7 @@ import RegisterScreen from './screens/RegisterScreen';
 import Header from './screens/Header';
 import CompanyPage from './screens/CompanyPage';
 import Help from './screens/Help';
-import submitadd from './screens/submitadd';
+import Submitadd from './screens/submitadd';
 
 
 
@@ -24,7 +24,7 @@ function App() {
           </header>
          
 
-        <Route path='/posting' component={submitadd}></Route>
+        <Route path='/posting'  component={Submitadd}></Route>
         <Route path='/help' component={Help}></Route>
         <Route path='/company' component={CompanyPage}></Route>
         <Route path="/" component={HomeScreen} exact></Route>

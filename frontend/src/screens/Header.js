@@ -48,14 +48,15 @@ function NavBar() {
             <div className='header_nav'>
 
                 {/* 1st link */}
-
+                 
                 {userInfo ? (
               <div className="dropdown">
                 <Link to="#">
+                < AccountCircleIcon  className='usericon'/>
                
 
                   {userInfo.name} <i className="fa fa-caret-down"></i>{' '}
-                  < AccountCircleIcon />
+                 
                 </Link>
                 <ul className="dropdown-content">
                   <li>
@@ -65,6 +66,7 @@ function NavBar() {
                   </li>
                 </ul>
               </div>
+              
             ) : (
                 <Link to='/signin' className='header_link'>
                    <div className='header_option'>
@@ -104,7 +106,7 @@ function NavBar() {
                 <Link to ='/cart' className='header_link'>
                     <div className='header_optionBasket'>
                         {/*shopping basket icon*/}
-                        <ShoppingCartIcon className='icon'/>
+                        <ShoppingCartIcon className='Basketicon'/>
                         {/*number of item in the basket*/}
                         {cartItems.length > 0 && (
                 <span className="badge">{cartItems.length}</span>
